@@ -1,6 +1,5 @@
 
 
-
  <html><head>
 <style> video {object-fit:fill}</style><style>html,body{margin:0;}</style>
 <style> .video-js {width: 100%; height: 100%;} #videojs {width: 100%; height: 100%;}</style></head>
