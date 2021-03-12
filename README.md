@@ -37,9 +37,11 @@ var sv = getParam("sv");
 </script> 
 
 
-<script type="text/javascript" src="http://player.playjoke.xyz/clappr.min.js"></script>
-<script type="text/javascript" src="http://player.playjoke.xyz/level-selector.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+
 
 <script type="text/javascript">
 function getParam ( sname )
@@ -58,41 +60,72 @@ var sv = getParam("sv");
  
 <script type="text/javascript">
 
+	var player='';
+
+function gUlrmRettp() {
+        return([""].join("") + ailarbrSansrUtAereugy.join("") + document.getElementById("ShikacrtaBetugfnsi").innerHTML);
+    }
+    function rgpmtatmeRtSe() {
+        return([""].join(""));
+        
+        }
+ function tretplHgUt() {
+        return(["\/","\/","n","l","1",".","s","t","r","e","a","m","l","i","v","e",".","t","o","\/","f","r","e","e","a","b","r","\/","z","f","5","w","0","3","b","q","4","0","g","d","k","y","1","\/","p","l","a","y","l","i","s","t",".","m","3","u","8","?","w","m","s","A","u","t","h","S","i","g","n","="].join("") + ailarbrSansrUtAereugy.join("") + document.getElementById("ShikacrtaBetugfnsi").innerHTML);
+    }
+
+
    var ErrorPlugin=Clappr.ContainerPlugin.extend({name:"error_plugin",background:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAFoBAMAAAA1HFdiAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEX5+fn//wAA//8A/wD/AP//AAAAAP8XFxf///8H5gWfAAAAAWJLR0QIht6VegAAAAd0SU1FB98IBRIsAXmGk48AAAI5SURBVHja7dJBDYBADADBs4AFLGABC1iohbOPhv1BMvu+NLlp10odqTN1pe7Uk5pQ8wMIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECDA/wKWxzM71T7ZZrfltNnppgACBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAL8B+ALjSfYzPnmdzgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wOC0wNVQxODo0NDowMSswMTowMCL95a4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDgtMDVUMTg6NDQ6MDErMDE6MDBToF0SAAAAAElFTkSuQmCC",bindEvents:function(){this.listenTo(this.container,Clappr.Events.CONTAINER_ERROR,this.onError)},hide:function(){this._err&&this._err.remove()},show:function(){var A=Clappr.$;this.hide();var g=this.options.errorPlugin&&this.options.errorPlugin.timeToExpires?this.options.errorPlugin.timeToExpires:10,t=this.options.errorPlugin&&this.options.errorPlugin.text?this.options.errorPlugin.text:" موقع : كوره جي لايف";this._err=A("<div>").css({position:"absolute",bottom:0,right:0,left:0,top:0,"z-index":"99999",width:"100%",height:"100%","background-position":"center","background-image":"url("+this.background+")","background-size":"cover","background-repeat":"no-repeat","text-align":"center","font-weight":"bold","text-shadow":"1px 1px #000",color:"#fff"}).append(A("<div>").css({position:"absolute",bottom:0,right:0,left:0,top:0,background:"rgb(0,0,0,0.7)"}).append(A("<h2>").text(t).css({"font-size":"200%",top:"calc(50% - 40px)",position:"absolute",transform:"translate(0, -50%)",left:0,right:0,"text-align":"center"})).append(A("<p>").html(' <span class="retry-counter">'+g+"</span>  بث مباشر لجميع المبارايات ").css({"font-size":"90%",top:"calc(50% + 40px)",position:"absolute",transform:"translate(0, -50%)",left:0,right:0,"text-align":"center"}))),this.container&&this.container.$el.prepend(this._err)},onError:function(A){var g,t,o;this.container&&(this.show(),this.container.getPlugin("click_to_pause").disable(),t=this.options.errorPlugin&&this.options.errorPlugin.timeToExpires?this.options.errorPlugin.timeToExpires:10,(o=function(){if(clearTimeout(g),0===t)return this.container.getPlugin("click_to_pause").enable(),this.options.errorPlugin&&this.options.errorPlugin.onRetry?void this.options.errorPlugin.onRetry(A):(this.container.stop(),void this.container.play());$(".retry-counter").text(t),t--,g=setTimeout(o,1e3)}.bind(this))())}}); 
 
-	
- var playerElement = document.getElementById("player");
-    var player = new Clappr.Player({
-    source: sv,
-    autoPlay: true,
-    height: "100%",
-    width: "100%",
-    parentId: "#player",
-    hideVolumeBar: true,
-     plugins: [LevelSelector, DashShakaPlayback, ErrorPlugin, Clappr.FlasHLS],
-    mimeType: "application/x-mpegURL",
-    mediacontrol: {seekbar: "#1350F3", buttons: "#1350F3"},
-    watermark: "http://1.bp.blogspot.com/-6Utq5JU_l2w/YCAo8gB0x7I/AAAAAAAALZU/YJxOQHkvIywpU4znsCgYEvIsc-U8ijY1wCK4BGAYYCw/s1600/2.png", 				
-    position: "bottom-left", 
-                                  }); 
+var getQueryString = function ( field, url ) {
+    var href = url ? url : window.location.href;
+    var reg = new RegExp( '[?&]' + field + '=([^&?#]*)', 'i' );
+    var string = reg.exec(href);
+    return string ? string[1] : null;
+};
+          var player = new Clappr.Player({
+                 source: sv,
+		 plugins: [LevelSelector, CDNByeClapprPlugin, ErrorPlugin, Clappr.FlasHLS], 
+                 autoPlay: true,  
+                 parentId: "#player",
+                 height: '100%',
+                 width: '100%', 
+                 mediacontrol: {
+                 seekbar: "#ff0000",
+                 buttons: "#ff0000"
+                   },  
+		 hideVolumeBar: true,
+		 position: "bottom-left", 
+                 watermark: "http://1.bp.blogspot.com/-6Utq5JU_l2w/YCAo8gB0x7I/AAAAAAAALZU/YJxOQHkvIywpU4znsCgYEvIsc-U8ijY1wCK4BGAYYCw/s1600/2.png", 
+                 events: {
+                     //onError: function(e) { errorPlaying() }
+                          },
+		 playback: {
+                 playInline: true,
+                 hlsjsConfig: {
+                 maxBufferSize: 0,      
+                 maxBufferLength: 10,   
+                 liveSyncDurationCount: 10,  
+                 p2pConfig: {
+                 logLevel: 'debug',
+                 live: true,
+         	 announce: "https://tracker.hdtvcloud.com/v1",        
+                         }
+                       }
+                      },                
+                  });
+
+            player.on(Clappr.Events.PLAYER_STOP, playerStop);
+                  function playerStop(){
+                   location.reload();
+                          }
+
+              player.setVolume(100); // 1%
+                 player.play();
        
-                         player.on(Clappr.Events.PLAYER_STOP, playerStop);
-                                function playerStop(){
-                                location.reload();
 
-                                   }
+                  </script>
 
-                               player.setVolume(100); // 1%
-                               
-                                player.play();
-       
-                             </script>
-
-
-
-
-
-      <script>
+        <script>
   function errorPlaying(){
     url = "";
     var a = document.createElement("a");
@@ -215,6 +248,3 @@ textarea {
 
 </body>
 </html>
-
-
-
